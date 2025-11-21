@@ -4,10 +4,41 @@ data:text/html;charset=utf-8,
 <head>
 <title>Time Since We Got Together</title>
 <style>
-body { font-family: Arial; background: #fce7f3; color:#4a044e; text-align:center; padding-top:50px; }
-.container { background:white; padding:20px; margin:auto; width:80%%; max-width:400px; border-radius:20px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
-h1 { font-size:24px; }
-#timer { font-size:18px; font-weight:bold; line-height:1.6; }
+body {
+  font-family: Arial;
+  background: linear-gradient(to bottom, #fce7f3, #ffe6f0);
+  color: #4a044e;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  margin: auto;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 26px;
+}
+
+#timer {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #d6336c;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
 </style>
 </head>
 <body>
